@@ -1,0 +1,107 @@
+html {
+    position: relative
+}
+
+body {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.jumbotron img {
+    width: 180px;
+    border: 5px solid #666;
+}
+
+hr {
+    width: 250px;
+    border-top: 4px solid #999;
+}
+
+section {
+    min-height: 500px;
+}
+/* p {
+    text-indent: 30px;
+} */
+
+.portfolio {
+    background-color: #eee;
+}
+
+.contact {
+    min-height: 800px;
+}
+
+footer {
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+}
+
+footer p {
+   color: #aaa; 
+   font-size: 1em;
+   padding-top: 20px;
+}
+
+footer a:hover {
+    font-weight: bold;
+    text-decoration: none;
+ }
+
+ /* .navbar {
+    background-color: #333;
+ }
+ .navbar .navbar-brand {
+    color: wheat;
+ } */
+
+
+
+ /* overlay  lightbox*/
+
+ .overlay {
+    visibility: hidden;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .5s;
+    text-align: center;
+    padding: 150px;
+ }
+
+ .overlay:target {
+    background: rgba(0, 0, 0, .8);
+    visibility: visible;
+ }
+ .overlay:target img {
+    box-shadow: 2PX 2PX 10PX 5px;
+    animation: zoomDanFade .5s;
+ }
+ .overlay img {
+    max-height:100%;
+ }
+
+ /* animasi */
+ @keyframes zoomDanFade {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+ }
+
+@keyframes slideUpDown {
+    
+}
+ /* akhir overlay  lightbox*/
